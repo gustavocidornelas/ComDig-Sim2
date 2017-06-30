@@ -4,11 +4,11 @@
 % Julho de 2017
 
 %% Parâmetros da simulação
-[scenario, numBits, MaxEb_N0_dB,Eb, N0, Eb_N0_dB, BER, N, G] = simulationParameters();
+[scenario, numBits, MaxEb_N0_dB,Eb, N0, E BER, N, G] = simulationParameters();
 
 %% Gerando os bits 
-bits = genBits(numBits); % Vetor de bits
-%bits = [0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 0 0]; % teste
+%bits = genBits(numBits); % Vetor de bits
+bits = [0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 0 0]; % teste
 
 %% Mapeando a sequência de bits em símbolos QPSK
 [symbols, compareVector] = MapperQPSK(bits, Eb); % Vetor de símbolos QPSK
